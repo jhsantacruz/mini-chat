@@ -29,3 +29,9 @@ gem 'bootstrap-sass'
 gem 'jquery-turbolinks'
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
+
+group :development do
+  gem 'annotate'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
