@@ -37,13 +37,23 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.6)
+    annotate (2.6.5)
+      activerecord (>= 2.3.0)
+      rake (>= 0.8.7)
     arel (6.0.0)
     autoprefixer-rails (5.0.0.1)
       execjs
+    better_errors (2.1.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.3)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
     builder (3.2.2)
+    coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -53,6 +63,7 @@ GEM
     coffee-script-source (1.8.0)
     cookiejar (0.3.2)
     daemons (1.1.9)
+    debug_inspector (0.0.2)
     em-http-request (1.1.2)
       addressable (>= 2.3.4)
       cookiejar
@@ -197,6 +208,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate
+  better_errors
+  binding_of_caller
   bootstrap-sass
   coffee-rails (~> 4.1.0)
   faye-rails (~> 2.0)
