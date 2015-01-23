@@ -11,9 +11,10 @@
 //   alert('There was an error while posting your comment.');
 // });
 
+Poller.clear();
+Poller.poll(0);
 <% if @comment.new_record? %>
-  alert('Your comment cannot be saved.');
+alert('Your comment cannot be saved.');
 <% else %>
-  $('#comments').find('.media-list').prepend('<%= j render @comment %>');
-  $('#comment_body').val('');
+$('#comment_body').val('');
 <% end %>
