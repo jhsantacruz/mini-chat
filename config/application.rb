@@ -17,7 +17,8 @@ Bundler.require(*Rails.groups)
 module MiniChat
   class Application < Rails::Application
     config.middleware.delete Rack::Lock
-    config.middleware.use FayeRails::Middleware, mount: '/faye', :timeout => 25
+    # config.middleware.use FayeRails::Middleware, mount: '/faye', :timeout => 25
+    config.middleware.use FayeRails::Middleware, extensions: [CsrfProtection.new], mount: '/faye', :timeout => 25
     
     config.active_record.raise_in_transactional_callbacks = true
   end
