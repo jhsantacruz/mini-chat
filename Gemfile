@@ -34,4 +34,6 @@ group :development do
   gem 'annotate'
   gem 'better_errors'
   gem 'binding_of_caller'
+  
+  gem 'minitest', '~> 5.5.1'
 end

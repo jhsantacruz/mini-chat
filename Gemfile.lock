@@ -216,6 +216,7 @@ DEPENDENCIES
   faye-rails (~> 2.0)
   jquery-rails
   jquery-turbolinks
+  minitest (~> 5.5.1)
   omniauth-facebook
   omniauth-twitter
   rails (= 4.2.0)
